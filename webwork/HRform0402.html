@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 課堂練習</title>
+    <style>
+        .container{
+            margin: auto;
+            width: 500px;
+        }
+
+
+    </style>
+</head>
+<body style="background-color:rgb(44, 58, 77);">
+    <div class="container">
+        <form action="" method="get">
+            <fieldset style="background-color:rgb(143, 179, 226);">
+                <label for="typename"><h2>Name:</h2></label>
+                <input type="text" id="" name="typename" placeholder="Name"><br><hr>
+
+                <label for="typeage"><h2>Age:</h2></label>
+                <input type="number" id="" name="typeage" placeholder="Age" max="70" min="18" title="18~70"><hr>
+
+
+
+                <h2>Gender:</h2>
+                <input type="radio" id="" name="gender" value="Female">
+                <label for="gender">Female</label><br>
+                <input type="radio" id="" name="gender" value="Male">
+                <label for="gender">Male</label><br>
+                <input type="radio" id="" name="gender" value="Else">
+                <label for="gender">Else</label><br>
+                <hr>
+
+                <h2>Ability</h2>
+                <input type="checkbox" id="" name="myability" value="css">
+                <label for="myability">CSS</label><br>
+                <input type="checkbox" id="" name="myability" value="java">
+                <label for="myability">JAVA</label><br>
+                <input type="checkbox" id="" name="myability" value="SQL">
+                <label for="myability">SQL</label><br>
+                <input type="checkbox" id="" name="myability" value="C++">
+                <label for="myability">C++</label><br>
+                <label for="myability">Else</label><br>
+                <input type="text" id="" name="myability" value="" placeholder="other abilities"><br>
+
+                <hr>
+                <label for="typeemail"><h2>Email:</h2></label>
+                <input type="email" id="email" name="typeemail" placeholder="*****@mail.com">
+                <hr>
+                <label for="mysalary"><h2>Salary:</h2></label>
+                <select name="mysalary" id="">
+                    <option value="">35000~38000</option>
+                    <option value="">38000~42000</option>
+                    <option value="">42000~45000</option>
+                    <option value="">45000~50000</option>
+                </select>
+                
+                
+
+
+
+<hr>
+                <br>
+                <input type="submit" value="Submit" title="不要按，沒東西">
+                <input type="reset" value="Reset">
+                <br>
+                <br>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

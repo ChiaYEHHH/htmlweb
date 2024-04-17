@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    
+    p , div {
+        font-size: xx-large;
+        font-weight: 800;
+    }
+    
+    /* div , p {
+        color: blue;
+    } */
+/* div > p {
+    color: rgb(179, 22, 126);
+} */
+/* class .my-parent 的後代 */
+.my-parent > p {
+    color: rgb(52, 221, 221);
+}
+/* div p {
+    color: blueviolet;
+} */
+</style>
+
+</head>
+<body>
+    <!-- , > ~ + 空格 . : -->
+    <div class="my-parent">
+        劉備
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;劉禪</p>
+    </div>
+    <div>
+        關羽
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;關平</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;關興</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;關門</p>
+
+    </div>
+    <div>
+        張飛
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;張揚</p>
+    </div>
+</body>
+</html>

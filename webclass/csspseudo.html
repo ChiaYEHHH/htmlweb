@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: antiquewhite;
+            
+        }
+        /* hover整個table會變色變大小 */
+        .box:hover{
+            width: 500px;
+            height: 500px;
+            background-color: blue;
+        }
+        table{
+            width: 80%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        /* hover整個table會變色變大小 */
+        /* table:hover{
+            background-color: blue;
+        } */
+        tr , td , th {
+            border: 2px dashed rgb(136, 209, 26);
+            
+        }
+        .price{
+            text-align: left;
+        }
+        /* ::before在元素前面添加額外元素 */
+        .price::before{
+            content: '$';
+        }
+        /* ::after在元素尾部添加額外樣式和內容 */
+        .price::after{
+            content: '元';
+        }
+        /* :nth-child(even)為偶數行設置背景色,:nth-child(odd)為奇數行設置背景顏色 */
+        tr:nth-child(even) {
+            background-color: #ecd1d1;
+
+            
+        }
+        /* :hover滑鼠移過去變色放大  */
+        td:hover{
+            background-color: rgb(243, 221, 195);
+            font-size: x-large;
+            color: blue;
+        }
+        </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    <hr>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>商品名稱</th>
+            <th>價格</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>咖啡</td>
+            <td class="price">150</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>拿鐵</td>
+            <td class="price">200</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>摩卡</td>
+            <td class="price">250</td>
+        </tr>
+    </table>
+</body>
+</html>

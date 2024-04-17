@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>組合選擇器</title>
+    <style>
+        
+        img{
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            height: 150px;
+        }
+        .menu {
+            border-collapse: collapse;
+            border-style:inset;
+            width: 700px;
+            height: 700px;
+        }
+        .vege , .egg {
+            background-color: rgb(114, 214, 172);
+            color: blue;
+        }
+        /* .corn {
+            background-color: #fae104;
+        } */
+        .mixegg , .corn {
+            background-color: blanchedalmond;
+            color: rgb(189, 82, 50);
+        }
+        /* .egg {
+            background-color: aquamarine;
+        } */
+        td > table {
+            width: 350px;
+            height: 150px;
+            border-style:dashed ;
+            align-content: center;
+
+        }
+    </style>
+</head>
+<body>
+    <table class="menu">
+        <tr>
+            <td class="vege">  
+                    <p>菜名:蛋花湯</p>
+                    <p>材料:蛋</p>
+                    <p>作法:水煮滾，蛋打散倒下去，攪一攪</p>
+                <table >
+                    <tr>
+                        <td>
+                            <img src="./images/eggflower.jpg" alt="" >
+                        </td>
+                    </tr>
+                </table>  
+            </td>
+            <td class="corn">
+                <div>
+                <p>菜名:玉米炒蛋</p>
+                <p>材料:玉米、蛋</p>
+                <p>作法:玉米+蛋攪拌均勻，油熱下鍋炒熟</p></div>
+                <table >
+                    <tr>
+                        <td>
+                            <img src="./images/corn.jpg" alt="">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="mixegg">
+                <p>菜名:蒸蛋</p>
+                <p>材料:蛋</p>
+                <p>作法:蛋打散加一點調味料，放電鍋蒸熟</p>
+                <table >
+                    <tr>
+                        <td>
+                            <img src="./images/mixegg.jpg" alt="">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td class="egg">
+                <p>菜名:水煮蛋</p>
+                <p>材料:蛋</p>
+                <p>作法:蛋放入冷水，煮滾5分鐘後關火，悶5分鐘</p>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./images/egg.jpg" alt="">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
