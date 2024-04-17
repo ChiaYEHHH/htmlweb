@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>框框框框</title>
+    <style>
+        body{
+            background-color: lightgreen;
+            height: 2000px;
+        }
+        .box{
+            position: relative;
+            left: 100px;
+            background-color: rgb(235, 173, 98);
+            width: 200px;
+            height: 200px;
+        }
+        .box-out{
+            position:static;
+            background-color: antiquewhite;
+            width: 80%;
+            height: 500px;
+            left: 200px;
+            margin: auto;            
+        }
+        .box-in{
+            position: absolute;
+            background-color: rgb(109, 200, 236);
+            width: 100px;
+            height: 100px;
+            left: 30%;
+            top: 40%;
+        }
+        .box-in2{
+            position: absolute;
+            background-color: rgb(150, 202, 219);
+            width: 100px;
+            height: 100px;
+            right: 30%;
+            bottom: 40%;
+        }
+        .box-in3{
+            position: absolute;
+            background-color: rgb(48, 107, 131);
+            width: 100px;
+            height: 100px;
+            right: 200px;
+            bottom: 300px;
+        }
+        .box-fixed{
+            position: fixed;
+            background-color: lightpink;
+            width: 100px;
+            height: 100px;
+            left: 50%;
+            top: 30%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">box</div>
+    <br>
+        <hr>
+    </br>
+    <div class="box-out">
+        <div class="box-in">box-in</div>
+        <div class="box-in2">box-in2</div>
+        <div class="box-in3">box-in3</div>
+    </div>
+    <br>
+        <hr>
+    </br>
+    <div class="box-fixed">box-fixed</div>
+    
+</body>
+</html>
