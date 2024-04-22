@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>練習排版</title>
+    <style>
+        body{
+            /* display:flex;
+            justify-content:center;
+            margin:0; */
+            background-color: #f5f5f7;
+            height: auto;
+            width: 100%;
+            
+        }
+        .row{
+            clear: both;
+            /* border: 3px solid green; */
+        }
+        .box{
+            float: left;
+            width: 100%;
+            height: auto;
+
+        }
+        
+        
+        .box1{
+            width: 100%;
+            
+            /* background-color: lightcoral; */
+
+        }
+        .box2{
+            width: 25%;
+            transition: transform 0.3s;
+            /* background-color: lightgoldenrodyellow; */
+        }
+        .box3{
+            width: 32%;
+            transition: transform 0.3s;
+            /* margin: auto; */
+            /* background-color: lightseagreen; */
+        }
+        .box4{
+            /* width: 100%; */
+            /* background-color: lightslategray; */
+        }
+        .box5{
+            /* width: 100%; */
+            /* background-color: lightcyan; */
+        }
+        h2{
+            font-weight: bold;
+            text-shadow: 2px 2px 3px #5466a3;
+        }
+        img{
+            width: 100%;
+        }
+        .box3 :hover {
+            transform: scale(1.05); /* 图片放大 1.05 倍 */
+        }
+        .box2 :hover {
+            transform: scale(1.05); /* 图片放大 1.05 倍 */
+        }
+        
+        
+    
+    
+    </style>
+</head>
+<body>
+     <div class="container1">
+        <div class="row">
+            <div class="box box1">
+                <img src="./pic/apple_h.JPG" alt="">
+            </div>
+        </div>
+     </div>
+     <div class="container2">
+        <div class="row">
+            <h2>最新登場。現在就來看看有哪些新品推薦。</h2>
+            <div class="box box2">
+                <img src="./pic/apple21.JPG" alt="">
+            </div>
+            <div class="box box2">
+                <img src="./pic/apple22.JPG" alt="">
+            </div>
+            <div class="box box2">
+                <img src="./pic/apple23.JPG" alt="">
+            </div>
+            <div class="box box2">
+                <img src="./pic/apple24.JPG" alt="">
+            </div>
+        </div>        
+     </div>
+     <div class="container3">
+        <div class="row">
+            <h2>為你幫幫忙。以各種方式隨時提供你需要的協助。</h2>
+            <div class="box box3">
+                <img src="./pic/apple31.JPG" alt="">
+            </div>
+            <div class="box box3">
+                <img src="./pic/apple32.JPG" alt="">
+
+            </div>
+            <div class="box box3">
+                <div>
+                    <img src="./pic/apple331.png" alt="">
+                </div>
+                <div>
+                    <img src="./pic/apple332.JPG" alt="">
+                </div>
+            </div>
+        </div>
+     </div>
+     <div class="container4">
+        <div class="row">
+            <h2>快速連結</h2>
+            <div class="box box4">
+                <button>訂單狀態</button>
+                <button>購物協助</button>
+                <button>退貨</button>
+                <button>你的收藏</button>
+
+
+            </div>
+           
+        </div>
+     </div>
+     <div class="container5">
+        <div class="row">
+            <div class="box box5">
+                <img src="./pic/apple_f.JPG" alt="">
+            </div>
+            
+        </div>
+     </div>
+</body>
+</html>
