@@ -8,8 +8,18 @@
         body {
             /* background-color: lightblue; */
             background-image: url('./pic/sky.jpg');
-            background-repeat: no-repeat;
+            /* background-repeat: no-repeat; */
             background-size: cover;
+            /* display 設置為flexbox靈活布局模式，可以更容易控制元素排列 */
+            display: flex;
+            /* justify-content 控制水平位置 */
+            justify-content: center;
+            /* align-item 垂直置中 */
+            align-items: center;
+            /* height:100vh 將body高度設置為視窗高度的100%，可以確保body填滿整個視窗高度  */
+            height: 100vh;
+            margin: 0;
+    
 
         }
         .container{
@@ -61,6 +71,13 @@
             background-position: bottom;
             width: 100%;
             }\ */
+        th{
+            /* font-weight:bold 字體加粗 */
+            font-weight: bold;
+            /* letter-spacing: 1px; */
+            font-size:30px;
+            text-shadow: 2px 2px 4px #0037ec;
+        }
 
     </style>
 </head>
@@ -68,10 +85,10 @@
     <div class="container">
         <table class="w_beach">
             <tr>
-                <td>ID</td>
-                <td>PIC</td>
-                <td>DESC</td>
-                <td>GOOGLE</td>
+                <th>ID</th>
+                <th>PIC</th>
+                <th>DESC</th>
+                <th>GOOGLE</th>
             </tr>
             <tr>
                 <!-- <img src="./pic/白沙灣02.jpg" alt=""> -->
