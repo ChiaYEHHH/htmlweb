@@ -8,15 +8,24 @@
         *{
             box-sizing: border-box;
         }
+        body{
+            /* 垂直置中必須設定高度 */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
         .col{
             clear: both;
         }
         .container_out{
+            /* margin: auto;  */
             width: 900px;
             height: 500px;
             background-color: lightgray;
             padding-top: 15px;
-
+            /* text-align: center; */
         }
         .container_in{
             width: 95%;
