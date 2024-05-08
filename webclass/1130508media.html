@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        /* 讓背景填滿整個畫面 */
+        animation: gradientAnimation 05s infinite;
+        /* 使用 gradientAnimation 動畫，持續 5 秒，無限循環 */
+        background: linear-gradient(to right, #ff5733, #ffbd69, #ffeea8);
+        /* 初始漸層背景 */
+        background-size: 400% auto;
+        /* 設定漸層大小為原來的四倍寬 */
+    }
+
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    .container_flex {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .item {
+        width: 30%;
+        height: 40%;
+        background-image: url("https://picsum.photos/id/660/600/400");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .item {
+            height: 32%;
+            width: 40%;
+            background-image: url("https://picsum.photos/id/600/480/320");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+        .item {
+            height: 40%;
+            width: 560px;
+            margin-top: 50px;
+            background-image: url("https://picsum.photos/id/480/560/380");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="container_flex">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
