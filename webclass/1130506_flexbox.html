@@ -1,77 +1,88 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-.flex-container {
-    background-color: rgb(143, 160, 177);
-    width: 100%;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    .flex-container {
+      background-color: rgb(143, 160, 177);
+      width: 100%;
+      height: 200px;
+      display: flex;
+      flex-direction: row;
 
-    /* 控制水平  space-around 分散置中 */
-    justify-content: space-around;
-    /* 控制垂直  center 置中*/
-    align-items: center;
-}
+      /* 控制水平  space-around 分散置中 */
+      justify-content: space-around;
+      /* 控制垂直  center 置中*/
+      align-items: center;
+    }
 
-.item {
-  background-color: lightblue;
-  width: 150px;
-  height: 150px;
-  font-size: 30px;
-  text-align: center;  
-}
-.container{
-    width: 100%;
-    height: 600px;
-    background-color: bisque;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-.item01{
-    /* 自己估算想換行的寬度 */
-    width: 30%;
-    height: 150px;
-}
-.item-hide{
-    /* 調整透明度，讓整體格是對齊 */
-    opacity: 0;
-}
-.item01:hover{
-    /* width: 32%;
+    .item {
+      background-color: lightblue;
+      width: 150px;
+      height: 150px;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .container {
+      width: 100%;
+      height: 600px;
+      background-color: bisque;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .item01 {
+      /* 自己估算想換行的寬度 */
+      width: 30%;
+      height: 150px;
+    }
+
+    .item-hide {
+      /* 調整透明度，讓整體格是對齊 */
+      opacity: 0;
+    }
+
+    .item01:hover {
+      /* width: 32%;
     height: 160px; */
-    /* scale: 0.5 0.5 ; */
-    transform: scale(0.5);
-    background-color: aquamarine;
-}
-</style>
+      /* scale: 0.5 0.5 ; */
+      transform: scale(0.5);
+      background-color: aquamarine;
+    }
+
+
+  </style>
 </head>
+
 <body>
 
-<h1>Create a Flex Container</h1>
+  <h1>Create a Flex Container</h1>
 
-<div class="flex-container">
-  <div class="item">1</div>
-  <div class="item">2</div>
-  <div class="item">3</div>  
-</div>
+  <div class="flex-container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
 
-<div class="container">
+  <div class="container">
     <div class="item item01">1</div>
     <div class="item item01">2</div>
-    <div class="item item01">3</div>  
+    <div class="item item01">3</div>
     <div class="item item01">4</div>
     <div class="item item01">5</div>
     <div class="item item01">6</div>
     <div class="item item01">7</div>
     <div class="item item01 item-hide">8</div>
-    <div class="item item01">9</div> 
+    <div class="item item01">9</div>
   </div>
 
+
 </body>
+
 </html>
-
-

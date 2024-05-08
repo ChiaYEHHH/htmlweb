@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container02 {
+            background-color: lightgray;
+            width: 80%;
+            height: 90vh;
+            margin: auto;
+        }
+
+        .container_flexbox {
+            background-color: lightblue;
+            width: 80%;
+            height: 90%;
+            margin: auto;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .item02 {
+            background-color: lightpink;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            justify-content: center;
+            margin-left: 50px;
+            padding-top: 140px;
+
+
+        }
+
+        .item-hide {
+            /* 調整透明度，讓整體格是對齊 */
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container container02">
+        <div class="container_flexbox">
+            <div class="item item02">1</div>
+            <div class="item item02">2</div>
+            <div class="item item02">3</div>
+            <div class="item item02">4</div>
+            <div class="item item02">5</div>
+            <div class="item item02 item-hide">6</div>
+        </div>
+    </div>
+</body>
+
+</html>
